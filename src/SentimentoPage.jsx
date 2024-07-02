@@ -12,7 +12,7 @@ const SentimentoPage = ({titulo, imagem, mensagem}) => {
   }
 
   const handleSelecionaEmocao = () => {
-    document.getElementById('mensagem').textContent = mensagem
+    document.getElementById('mensagem').textContent = mensagem;
   }
 
   return(
@@ -28,6 +28,6 @@ const SentimentoPage = ({titulo, imagem, mensagem}) => {
         <h3>{titulo}</h3>
       </div>
   )
-}
+};
 
 export default SentimentoPage;

@@ -14,15 +14,15 @@ import SentimentoCard from './SentimentoCard';
 function App() {
 
   const emocaoFotos = [
-    { nome: 'Tristeza', imagem: Tristeza1, mensagem:'teste' },
-    { nome: 'Alegria', imagem: Alegria2 },
-    { nome: 'Raiva', imagem: Raiva3 },
-    { nome: 'Medo', imagem: Medo4 },
-    { nome: 'Nojinho', imagem: Nojinho5 },
-    { nome: 'Ansiedade', imagem: Ansiedade6 },
-    { nome: 'Vergonha', imagem: Vergonha7 },
-    { nome: 'Inveja', imagem: Inveja8 },
-    { nome: 'Tedio', imagem: Tedio9 }
+    { nome: 'Tristeza', imagem: Tristeza1, mensagem:'Você escolheu Tristeza' },
+    { nome: 'Alegria', imagem: Alegria2,  mensagem:'Você escolheu Alegria'},
+    { nome: 'Raiva', imagem: Raiva3, mensagem:'Você escolheu Raiva' },
+    { nome: 'Medo', imagem: Medo4, mensagem:'Você escolheu Medo' },
+    { nome: 'Nojinho', imagem: Nojinho5, mensagem:'Você escolheu Nojinho' },
+    { nome: 'Ansiedade', imagem: Ansiedade6, mensagem:'Você escolheu Ansiedade' },
+    { nome: 'Vergonha', imagem: Vergonha7, mensagem:'Você escolheu Vergonha' },
+    { nome: 'Inveja', imagem: Inveja8, mensagem:'Você escolheu Inveja' },
+    { nome: 'Tedio', imagem: Tedio9, mensagem:'Você escolheu Tedio' }
 
   ];
 
@@ -33,7 +33,7 @@ function App() {
         imagem={emocaoFotos}
       />
       <h1>Selecione uma imagem e descubra o sentimento!</h1>
-      <p id='mensagem'>vc escoleu </p>
+      <p id='mensagem'>Escolha um Sentimento </p>
     </>
   )
 };

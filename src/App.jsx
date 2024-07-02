@@ -14,7 +14,7 @@ import SentimentoCard from './SentimentoCard';
 function App() {
 
   const emocaoFotos = [
-    { nome: 'Tristeza', imagem: Tristeza1 },
+    { nome: 'Tristeza', imagem: Tristeza1, mensagem:'teste' },
     { nome: 'Alegria', imagem: Alegria2 },
     { nome: 'Raiva', imagem: Raiva3 },
     { nome: 'Medo', imagem: Medo4 },
@@ -32,8 +32,10 @@ function App() {
         titulo="Fotos Sentimentos"
         imagem={emocaoFotos}
       />
+      <h1>Selecione uma imagem e descubra o sentimento!</h1>
+      <p id='mensagem'>vc escoleu </p>
     </>
   )
-}
+};
 
 export default App

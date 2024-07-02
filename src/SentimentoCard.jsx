@@ -7,7 +7,7 @@ const SentimentoCard = ({titulo, imagem}) => {
             <div className='section-itens'>
                 {
                     imagem.map((catalago) => 
-                        <SentimentoPage titulo={catalago.nome} imagem={catalago.imagem}/>
+                        <SentimentoPage titulo={catalago.nome} imagem={catalago.imagem} mensagem={catalago.mensagem}/>
                     )
                 }
             </div>

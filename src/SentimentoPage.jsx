@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as faStarSolid } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 
-const SentimentoPage = ({titulo, imagem, favorito}) => {
+const SentimentoPage = ({titulo, imagem, mensagem}) => {
   const [fav, setFav] = useState();
 
   const handleFavClick = () => {
@@ -11,9 +11,13 @@ const SentimentoPage = ({titulo, imagem, favorito}) => {
     setFav(newFav);
   }
 
+  const handleSelecionaEmocao = () => {
+    document.getElementById('mensagem').textContent = mensagem
+  }
+
   return(
       <div className='card-fotos'>
-        <div className='titulo-card'>
+        <div className='titulo-card' onClick={handleSelecionaEmocao}>
           {
             fav == true 
             ? <FontAwesomeIcon icon={faStarSolid} className='fa-star' onClick={handleFavClick}/>
@@ -25,6 +29,5 @@ const SentimentoPage = ({titulo, imagem, favorito}) => {
       </div>
   )
 }
-
 
 export default SentimentoPage;

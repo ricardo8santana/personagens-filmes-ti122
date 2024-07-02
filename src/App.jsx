@@ -1,3 +1,4 @@
+//Importe de imagens
 import './App.css';
 import Tristeza1 from './img/Tristeza1.jpg';
 import Alegria2 from './img/Alegria2.jpg';
@@ -10,7 +11,7 @@ import Inveja8 from './img/Inveja8.jpg';
 import Tedio9 from './img/Tedio9.jpg';
 
 import SentimentoCard from './SentimentoCard';
-
+//Declaração da função, e mensagens que ao cliclar sobre a imagem parece uma mensagem
 function App() {
 
   const emocaoFotos = [
@@ -25,7 +26,7 @@ function App() {
     { nome: 'Tedio', imagem: Tedio9, mensagem:'Você escolheu Tedio' }
 
   ];
-
+//Titulos e perguntas que irão ser exibida.
   return (
     <>
       <SentimentoCard 
